@@ -44,6 +44,8 @@ def detectar_cambios():
     except Exception as e:
         print("Error:", e)
 
+enviar_telegram("🔵 El bot de alerta acaba de iniciar correctamente.")
+
 while True:
     detectar_cambios()
     time.sleep(180)  # Cada 3 minutos
